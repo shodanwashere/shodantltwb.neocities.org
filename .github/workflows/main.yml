@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: head
       - name: Install Neocities CLI
         run: gem install neocities -v 0.0.20
       - name: Get artifact

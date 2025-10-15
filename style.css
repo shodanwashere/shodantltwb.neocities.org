@@ -4,7 +4,8 @@
    
 @import url('https://fonts.cdnfonts.com/css/frutiger');
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
-@import url('https://fonts.cdnfonts.com/css/public-pixel');
+@import url('https://fonts.cdnfonts.com/css/offbit-trial');
+@import url('/gruvbox_dark.css');
    
 @keyframes wobbleAnim {
   0% {transform: rotate(8deg);}
@@ -152,6 +153,7 @@ body {
 
 .main_column {
   min-width: 17.5em;
+  max-width: 50vw;
   /* box-shadow: 2px 2px 5px black;
   border: 2px dashed cyan;
   background: linear-gradient(to bottom, rgba(174,188,191,0.5) 0%,rgba(110,119,116,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
@@ -160,11 +162,19 @@ body {
   padding: 5px;
 }
 
-.item > .main_content {
+.item > .main_content, .item > .blog_content {
   color: white;
   background: rgba(0,0,0,0.5);
   border: 1px solid grey;
   padding: 1px 5px 1px 5px;
+}
+
+.blog_content > p > img{
+  width: auto;
+  max-height: 15em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes scroll-r2l {
@@ -300,9 +310,9 @@ a { color: cyan }
   color: #FFFFFF;
   font-weight: normal;
   text-align: left;
-  font-size: 10px;
+  font-size: 14px;
   width: 240px;
-  font-family: 'Public Pixel';
+  font-family: 'Offbit Trial';
 }
 
 .photo_row {
@@ -353,4 +363,36 @@ a { color: cyan }
     color: lightgrey !important;
   }
 
+table {
+  width: 100%;
+  color: black;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+th, td {
+  padding: 3px;
+}
+
+td > a {
+  color: red;
+  transition: 0.25s;
+}
+
+td > a:hover {
+  color: white;
+  text-shadow: 0px 0px 8px red;
+}
+
+.tag {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: white;
+  margin: 2px;
+}
+
+code > span {
+  white-space: normal;
+}
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam942.ani), url(https://cur.cursors-4u.net/games/gam-10/gam942.png), auto !important;} /* End https://www.cursors-4u.com */

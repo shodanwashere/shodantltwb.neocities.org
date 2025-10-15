@@ -1,5 +1,7 @@
 - name: About Me
   link: /index
+- name: Blog
+  link: /blog/
 - name: Projects
   link: /projects
 - name: Games

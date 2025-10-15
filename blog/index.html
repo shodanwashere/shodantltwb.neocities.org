@@ -1,0 +1,30 @@
+---
+layout: default
+ytembedid: AFvLNB2oFNk
+song: Miiverse Main Theme
+artist: Nintendo
+---
+<div class="item">
+  <span class="title">Blog</span>
+  <div class="close">X</div>
+  <div class="main_content">
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Categories</th>
+      </tr>
+      {% for post in site.posts %}
+        <tr>
+          <td>{{ post.date | date: '%m/%d/%Y' }}</td>
+          <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+          <td>
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</div>
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>

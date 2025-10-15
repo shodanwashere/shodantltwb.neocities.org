@@ -25,12 +25,23 @@
 }
 
 body {
-  background: url("img/background.jpg");
+  background: url("img/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: black;
   font-family: 'Frutiger', Verdana;
+}
+
+#videobg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-filter: hue-rotate(-60deg);
+  filter: hue-rotate(-60deg);
 }
 
 .close {

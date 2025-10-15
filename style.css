@@ -321,8 +321,8 @@ a { color: cyan }
 }
 
 .photo_column {
-  flex: 32%;
-  max-width: 32%;
+  flex: 30%;
+  max-width: 30%;
   padding: 0 4px;
 }
 

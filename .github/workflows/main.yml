@@ -30,6 +30,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
+          path: _site
       - name: Upload artifact to Neocities
         run: |
           mkdir -p $HOME/.config/neocities

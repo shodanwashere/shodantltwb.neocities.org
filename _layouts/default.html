@@ -107,7 +107,6 @@
               </div>
             </div>
           </a>
-        <center style="color: white">Last updated on {{ site.time | date: '%m/%d/%Y, %H:%M:%S %Z'}}</center>
         <div id="navbar" class="flex-container flex-row spacing">
           {% for item in site.data.navigation %}
           <a class="button {% if page.url contains item.link and item.name != 'About Me'%}selected{% elsif page.url == item.link %}selected{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
@@ -121,6 +120,7 @@
             <div class="close">X</div>
             <div class="main_content" style="text-align: center;">
               <p>Made with love by Shodan, the Hacker | Hosted by <a href="https://neocities.org" style="color: cyan">neocities.org</a></p>
+              <p>Last updated on {{ site.time | date: '%m/%d/%Y, %H:%M:%S %Z'}}</p>
             </div>
           </div>
         </div>

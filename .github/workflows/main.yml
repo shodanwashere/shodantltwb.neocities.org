@@ -34,7 +34,6 @@ jobs:
       - name: Upload artifact to Neocities
         run: |
           mkdir -p $HOME/.config/neocities
-          echo "{\"API_KEY\":\"{{ secrets.NEOCITIES_API_KEY }}\",\"SITENAME\":\"shodantltwb\"}" > $HOME/.config/neocities/config.json
-          cat $HOME/.config/neocities/config.json
+          echo "{\"API_KEY\":\"${{ secrets.NEOCITIES_API_KEY }}\",\"SITENAME\":\"shodantltwb\"}" > $HOME/.config/neocities/config.json
           neocities push _site
 

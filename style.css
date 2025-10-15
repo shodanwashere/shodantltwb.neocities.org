@@ -153,7 +153,6 @@ body {
 
 .main_column {
   min-width: 17.5em;
-  max-width: 50vw;
   /* box-shadow: 2px 2px 5px black;
   border: 2px dashed cyan;
   background: linear-gradient(to bottom, rgba(174,188,191,0.5) 0%,rgba(110,119,116,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);

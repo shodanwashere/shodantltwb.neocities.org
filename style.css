@@ -317,7 +317,8 @@ a { color: cyan }
 .photo_row {
   display: flex;
   flex-wrap: wrap;
-  padding: 4px;
+  padding: 2px;
+  justify-content: space-between;
 }
 
 .photo_column {

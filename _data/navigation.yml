@@ -1,0 +1,12 @@
+- name: About Me
+  link: /index
+- name: Projects
+  link: /projects
+- name: Games
+  link: /games
+- name: Music
+  link: /music
+- name: Photos
+  link: /photos
+- name: Credits
+  link: /credits

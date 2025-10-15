@@ -1,0 +1,345 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+@import url('https://fonts.cdnfonts.com/css/frutiger');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+   
+@keyframes wobbleAnim {
+  0% {transform: rotate(8deg);}
+  50% {transform: rotate(-8deg);}
+  100% {transform: rotate(8deg);}
+}
+
+#statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+body {
+  background: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-family: 'Frutiger', Verdana;
+}
+
+.close {
+  background: linear-gradient(135deg, rgba(243,197,189,0.5) 0%,rgba(232,108,87,0.5) 50%,rgba(234,40,3,0.5) 51%,rgba(255,102,0,0.5) 75%,rgba(199,34,0,0.5) 100%);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1.25em;
+  width: 2.6em;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 2px;
+  transition: 0.5s;
+  border-left: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.close:hover {
+  background: linear-gradient(135deg, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+  box-shadow: 0px 0px 5px red;
+}
+
+.flex-container {
+  display: flex;  
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.spacing {
+  margin: 20px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%);
+  padding: 5px;
+  border: 1px solid cyan;
+  border-radius: 5px;
+  margin: 2px;
+  transition: 0.5s;
+}
+
+.button.selected {
+  background: linear-gradient(to bottom, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%);
+  color: black;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%);
+  color: black;
+  box-shadow: 0px 0px 5px white;
+}
+
+#headerText {
+  font-weight: lighter;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  transition: text-shadow 1s;
+}
+
+#headerText:hover{
+  text-shadow: 1px 1px 5px cyan;
+}
+
+#navbar {
+  border: 2px solid white;
+  border-radius: 5px;
+  background: repeating-linear-gradient(to top, RGBA(0, 255, 255, 0.5), RGBA(0, 255, 255, 0.5) 1px, transparent, transparent 2px);
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px white;
+}
+
+#header {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerHref {
+  text-decoration: none;  
+}
+
+#middle {
+  width: 100%;
+}
+
+.column {
+  /* border: 2px dashed cyan;
+  border-radius: 10px; */
+  color: white;
+  padding: 5px;
+  /* background: linear-gradient(to bottom, rgba(174,188,191,0.5) 0%,rgba(110,119,116,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+    box-shadow: 2px 2px 5px black; */
+  width: 17.5em;
+  min-width: 17.5em;
+  max-width: 17.5em;
+}
+
+.main_column {
+  min-width: 17.5em;
+  /* box-shadow: 2px 2px 5px black;
+  border: 2px dashed cyan;
+  background: linear-gradient(to bottom, rgba(174,188,191,0.5) 0%,rgba(110,119,116,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+  border-radius: 10px; */
+  color: white;
+  padding: 5px;
+}
+
+.item > .main_content {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid grey;
+  padding: 1px 5px 1px 5px;
+}
+
+@keyframes scroll-r2l {
+  0% { transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+
+.item > .rolodex_content {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid grey;
+  padding: 1px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#guestbook {
+  height: 500px;
+  position: relative;
+  width: 98%;
+  
+}
+
+.item {
+  border: 1px solid white;
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(246,248,249,0.4) 0%,rgba(229,235,238,0.4) 50%,rgba(215,222,227,0.4) 51%,rgba(245,247,249,0.4) 100%);
+  padding: 1px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  position: relative;
+  box-shadow: 2px 2px 5px black;
+}
+
+a { color: cyan }
+
+#neighbours > a > img{
+  margin: 0;
+}
+
+.title {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.item > .content {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid grey;
+  max-height: 6em;
+  overflow: scroll;
+  padding: 1px;
+}
+
+#webrings {
+  text-align: center;
+}
+
+#userboxes img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#calendar {
+  max-height: 200px !important;
+  overflow: none !important;
+  text-align: center;
+}
+
+#calendar > a {
+  margin-left: auto;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+  color: black;
+  transition: background 1s;
+  gap: 2px;
+}
+
+.social:hover {
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+}
+
+.social > img {
+  width: 16px;
+  height: auto;
+}
+
+#main {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#music {
+  position: relative;
+  background: url('https://file.garden/ZRYtsnIP2EXOR4Kw/Site%20Files/musicplayer.png') top left no-repeat;
+    background-size: auto;
+  background-size: auto;
+  background-size: 100% 100%;
+  overflow: hidden;
+  height: 50px;
+  max-width: 305px;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 5px black;
+}
+#music iframe {
+  position: absolute;
+  top: 0px;
+  height: 47px;
+  opacity: 0.00000000000000000000000001;
+  z-index: 0;
+  left: 0px;
+}
+#music div {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  width: 51%;
+  margin: 0 !important;
+}
+#music span {
+  display: block;
+  color: #FFFFFF;
+  font-weight: normal;
+  text-align: left;
+  font-size: 10px;
+  width: 240px;
+  font-family: 'Public Pixel';
+}
+
+.photo_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.photo_column {
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
+.photo_date {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.photo_column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 1px 1px 5px black;
+}
+
+#aero-ring {
+    background: linear-gradient(to bottom, #404040 0%, #000000 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
+      inset 0 2px 1px rgba(255, 255, 255, 0.15),
+      inset 0 -2px 1px rgba(0, 0, 0, 0.35);
+    font-family: sans-serif;
+    margin: 10px auto 0px auto;
+    max-width: 15rem;
+    padding: 0.75rem;
+  }
+
+  #aero-ring a,
+  #aero-ring a:visited {
+    color: white !important;
+  }
+
+  #aero-ring a:focus,
+  #aero-ring a:hover,
+  #aero-ring a:active {
+    color: lightgrey !important;
+  }
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam942.ani), url(https://cur.cursors-4u.net/games/gam-10/gam942.png), auto !important;} /* End https://www.cursors-4u.com */

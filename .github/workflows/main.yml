@@ -1,0 +1,34 @@
+name: CI/CD
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        uses: actions/jekyll-build-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          if-no-files-found: error
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Install Neocities CLI
+        run: gem install neocities -v 0.0.20
+      - name: Get artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+      - name: Upload artifact to Neocities
+        run: |
+          mkdir -p $HOME/.config/neocities
+          echo "{\"API_KEY\":\"{{ secrets.NEOCITIES_API_KEY }}\",\"SITENAME\":\"shodantltwb\"}" > $HOME/.config/neocities/config.json
+          neocities push _site
+

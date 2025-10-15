@@ -26,12 +26,12 @@
           <span class="title">Interests</span>
           <div class="close">X</div>
           <div class="content" id="userboxes">
-            <img src="img/userboxes/scottpilgrim.png"><br>
-            <img src="img/userboxes/mgs.png"><br>
-            <img src="img/userboxes/zelda.png"><br>
-            <img src="img/userboxes/persona5.png"><br>
-            <img src="img/userboxes/dmc.png"><br>
-            <img src="img/userboxes/yakuza.png">
+            <img src="/img/userboxes/scottpilgrim.png"><br>
+            <img src="/img/userboxes/mgs.png"><br>
+            <img src="/img/userboxes/zelda.png"><br>
+            <img src="/img/userboxes/persona5.png"><br>
+            <img src="/img/userboxes/dmc.png"><br>
+            <img src="/img/userboxes/yakuza.png">
           </div>
         </div>
         <div class="item">
@@ -52,7 +52,7 @@
           <span class="title">Let's be neighours :)</span>
           <div class="close">X</div>
           <div class="content">
-            <center><a href="https://shodantltwb.neocities.org"><img src="img/shodan8831.png"></a><br>
+            <center><a href="https://shodantltwb.neocities.org"><img src="/img/shodan8831.png"></a><br>
             <textarea readonly>&#60;a href="https://shodantltwb.neocities.org"&#62;&#60;img src="https://shodantltwb.neocities.org/img/shodan8831.png"&#62;&#60;/a&#62;</textarea></center>
           </div>
         </div>
@@ -88,11 +88,11 @@
           <span class="title">Socials</span>
           <div class="close">X</div>
           <div class="content">
-            <a class="social" href="https://spacehey.com/shodantltwb"><img src="img/spacehey.png"/><span>SpaceHey</span></a>
-            <a class="social" href="https://www.youtube.com/channel/UCjKQR691vKJin-R2QSNr1Bw"><img src="img/youtube.png"/><span>YouTube</span></a>
-            <a class="social" href="https://pretendo.network/"><img src="img/pretendo.jpg"/><span>PNID: 4093-4742-2393</span></a>
-            <a class="social"><img src="img/nso.jpg"/><span>NSO: 3823-7197-1312</span></a>
-            <a class="social" href="https://steamcommunity.com/id/ShodanTheHacker/"><img src="img/steam.png"/><span>Steam</span></a>
+            <a class="social" href="https://spacehey.com/shodantltwb"><img src="/img/spacehey.png"/><span>SpaceHey</span></a>
+            <a class="social" href="https://www.youtube.com/channel/UCjKQR691vKJin-R2QSNr1Bw"><img src="/img/youtube.png"/><span>YouTube</span></a>
+            <a class="social" href="https://pretendo.network/"><img src="/img/pretendo.jpg"/><span>PNID: 4093-4742-2393</span></a>
+            <a class="social"><img src="/img/nso.jpg"/><span>NSO: 3823-7197-1312</span></a>
+            <a class="social" href="https://steamcommunity.com/id/ShodanTheHacker/"><img src="/img/steam.png"/><span>Steam</span></a>
           </div>
         </div>
       </div>
@@ -100,13 +100,14 @@
         <a href="index.html" id="headerHref">
           <div id="header" class="flex-container flex-row">
               <div id="scottHead">
-                <img src="img/scottHead.png">
+                <img src="/img/scottHead.png">
               </div>
               <div id="headerText">
                 <h1>Shodan, the Hacker</h1>
               </div>
             </div>
           </a>
+        <center style="color: white">Last updated on {{ site.time | date: '%m/%d/%Y, %H:%M:%S'}} (GMT+1)</center>
         <div id="navbar" class="flex-container flex-row spacing">
           {% for item in site.data.navigation %}
             <a class="button {% if page.url contains item.link %}selected{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
@@ -186,6 +187,7 @@
               <ul>
                 <li>Initial version of a "Games" page for my game collection.</li>
                 <li>Uploaded site to GitHub. Deployments are now done via GitHub actions. Plans to migrate to a local GitLab instance may be in order.</li>
+                <li>Started a little blog!</li>
               </ul>
               <li>0.4 - 13/10/2025</li>
               <ul>

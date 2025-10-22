@@ -173,8 +173,9 @@ body {
 }
 
 .blog_content > p > img{
-  width: auto;
-  max-height: 15em;
+  height: auto;
+  max-height: 30em;
+  max-width: 40em;
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -4,7 +4,7 @@ ytembedid: DbFgUtIenfs
 song: Tomodachi Life - Mii Editor
 artist: Asuka Itō
 title: How I Built This Site
-tags: ['programming']
+tags: ['programming','computers']
 date: 2025-10-15 16:56:26 +0100
 ---
 hi :)

@@ -400,4 +400,33 @@ td > a:hover {
 code > span {
   white-space: normal;
 }
+
+.scroll {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  max-width: 56vw;
+  height: 31px;
+}
+
+.scroll div {
+  white-space: nowrap;
+  font-size: 0;
+  animation: animate1 var(--t) linear infinite;
+  margin: 0
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll div a , .scroll div img{
+  display: inline-block;
+}
+
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam942.ani), url(https://cur.cursors-4u.net/games/gam-10/gam942.png), auto !important;} /* End https://www.cursors-4u.com */

@@ -30,7 +30,7 @@
 }
 
 body {
-  background: url("img/castletown.webp");
+  background: url("img/castletown.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -167,7 +167,7 @@ body {
 
 .item > .main_content, .item > .blog_content {
   color: white;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.65);
   border: 1px solid grey;
   padding: 1px 5px 1px 5px;
 }

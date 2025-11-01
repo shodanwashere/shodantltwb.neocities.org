@@ -429,4 +429,23 @@ code > span {
   display: inline-block;
 }
 
+table#changelog {
+  background: none;
+  color: white;
+}
+
+table#changelog tr td {
+  border: 1px solid white;
+}
+
+table#changelog tr {
+  vertical-align: top;
+}
+
+table#changelog tr td ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam942.ani), url(https://cur.cursors-4u.net/games/gam-10/gam942.png), auto !important;} /* End https://www.cursors-4u.com */

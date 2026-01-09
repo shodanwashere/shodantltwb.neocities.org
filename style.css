@@ -405,7 +405,7 @@ code > span {
   position: relative;
   display: flex;
   overflow: hidden;
-  max-width: 56vw;
+  max-width: 60vw;
   height: 31px;
 }
 

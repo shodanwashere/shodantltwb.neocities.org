@@ -18,7 +18,7 @@ If you work only from the available front page downloads, you'll see that NetHun
 
 Anything we can do to change this? Surprisingly, yes! Following a paper trail of documentation, you can see that there's a custom kernel specifically for the Samsung Galaxy S20 FE 5G running LineageOS 23.
 
-![](/img/posts/2026-04-02-nethuntersvirusxS20FE5G/nethunter_builds.png)
+![](/img/posts/2026-04-02-nethuntersvirusxS20FE5G/nethunter_kernels.png)
 
 Offensive Security has a number of scripts available to use, one of them being used for building [NetHunter Installer Images]([https://gitlab.com/kalilinux/nethunter](https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-installer)). I used that to create an image specifically to install NetHunter 2026.1 on the S20 FE 5G using this custom kernel, but when it came to installing it through Magisk, I ran into problems.
 

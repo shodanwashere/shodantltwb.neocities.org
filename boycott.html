@@ -37,10 +37,14 @@ artist: Rage Against The Machine
   .company img:not(li img) {
     max-width: 100%;
     object-fit: contain;
-    margin-left: auto;
-    aspect-ratio: 1 / 1;
-    margin-right: auto;
     display: block;
+    aspect-ratio: 1 / 1;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 </style>
 <center><img src="img/construction.gif"></center>

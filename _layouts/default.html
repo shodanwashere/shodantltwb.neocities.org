@@ -168,11 +168,17 @@
         </div>
         <div class="main_column">
           {{ content }}
-          <div class="item">
-            <span class="title">bottom.bat</span>
-            <div class="close">X</div>
-            <div class="main_content" style="text-align: center;">
-              <p>Made with love by Shodan, the Hacker | Hosted by <a href="https://neocities.org" style="color: cyan">neocities.org</a></p>
+          <div class="window active">
+            <div class="title-bar">
+              <div class="title-bar-text">bottom.bat</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body" style="text-align: center;">
+              <p>Made with love by Shodan, the Hacker | Hosted by <a href="https://neocities.org" style="color: blue">neocities.org</a></p>
               <p>Last updated on {{ site.time | date: '%m/%d/%Y, %H:%M:%S %Z'}}</p>
             </div>
           </div>

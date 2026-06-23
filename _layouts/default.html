@@ -185,10 +185,14 @@
         </div>
       </div>
       <div id="right" class="flex-container flex-column spacing column">
-        <div class="item">
-          <span class="title">Status</span>
-          <div class="close">X</div>
-          <div class="content">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Status</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
             <script type="text/javascript"> 
               rssfeed_url = new Array(); 
               rssfeed_url[0]="https://status.cafe/users/shodantltwb.atom";  
@@ -230,25 +234,40 @@
             <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
             <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
             <div style="color:#ccc;font-size:10px; text-align:right; width:230px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
+
           </div>
         </div>
-        <div class="item">
-          <span class="title">Guestbook</span>
-          <div class="close">X</div>
-          <iframe id="guestbook" src="https://shodantltwb.atabook.org/"></iframe>
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Guestbook</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" style="height: 500px; overflow: hidden;">
+            <iframe id="guestbook" src="https://shodantltwb.atabook.org/"></iframe>
+          </div>
         </div>
-        <div class="item">
-          <span class="title">Changelog</span>
-          <div class="close">X</div>
-          <div class="content">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Changelog</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-scrollbar" style="max-height: 9em; overflow: scroll">
             {% include changelog.html %}
           </div>
         </div>
-        <div class="item">
-          <span class="title">Flag Counter</span>
-          <div class="close">X</div>
-          <div class="content">
-            <a href="https://flagcounter.me/details/ghj"><img src="https://flagcounter.me/ghj/" alt="Flag Counter"></a>
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Flag Counter</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" style="overflow: hidden">
+            <a href="https://flagcounter.me/details/ghj" style="display: block; width: fit-content;"><img src="https://flagcounter.me/ghj/" alt="Flag Counter"></a>
           </div>
         </div>
       </div>

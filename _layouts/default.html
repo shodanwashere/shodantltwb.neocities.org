@@ -8,6 +8,7 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
   </head>
   <body>
     <!-- <video id="videobg" src="video/background.mp4" autoplay loop muted></video> uncomment when supporter tier is paid -->
@@ -22,13 +23,17 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <span class="title">Interests</span>
-          <div class="close">X</div>
-          <div class="content" id="userboxes">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Interests</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-scrollbar" id="userboxes" style="max-height: 6em; overflow: scroll">
             <img src="/img/userboxes/thug.png">
             <img src="/img/userboxes/scottpilgrim.png"><br>
-	        <img src="/img/userboxes/deltarune.png"><br>
+	          <img src="/img/userboxes/deltarune.png"><br>
             <img src="/img/userboxes/mgs.png"><br>
             <img src="/img/userboxes/zelda.png"><br>
             <img src="/img/userboxes/persona5.png"><br>
@@ -36,41 +41,65 @@
             <img src="/img/userboxes/yakuza.png">
           </div>
         </div>
-        <div class="item">
-          <span class="title">RiiTag</span>
-          <div class="close">X</div>
-          <div class="content">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">RiiTag</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
             <a href="https://riitag.t0g3pii.de/user/401475293295935500">
               <img style="max-width: 100%" src="https://riitag.t0g3pii.de/401475293295935500/tag.png" alt="RiiTag" />
             </a>
           </div>
         </div>
-        <div class="item">
-          <span class="title">Calendar</span>
-          <div class="close">X</div>
-          <div class="content" id="calendar">
-            <a href="https://printcal.net/website-calendar-widget.php"><img src="https://printcal.net/web-calendar.png?size=s&w=m&ho=01&mo=00&so=1" alt="Printcal.net Calendar Widget"/></a>
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Calendar</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" id="calendar">
+            <a href="https://printcal.net/website-calendar-widget.php">
+              <img src="https://printcal.net/web-calendar.png?size=s&w=m&ho=01&mo=00&so=1" alt="Printcal.net Calendar Widget"/>
+            </a>
           </div>
         </div>
-        <div class="item">
-          <span class="title">Neighbours</span>
-          <div class="close">X</div>
-          <div class="content" id="neighbours">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Neighbours</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body" id="neighbours">
+            
 		  <a href="https://beansoupclub.neocities.org/" target="_blank"><img src="https://beansoupclub.neocities.org/buttonmain.gif" width="88" height="31"></a><a href="https://r3ckoning.nekoweb.org" target="blank"><img src="https://r3ckoning.nekoweb.org/fishy-animated.gif" alt="r3ckoner !!"></a><a href="https://demisdesignart.neocities.org" target=_blank><img src="https://demisdesignart.neocities.org/demisbutton.png"></a><a href="https://reduxflakes.neocities.org" target="_blank"><img src="https://reduxflakes.neocities.org/public/buttons/reduc_anim.gif"></a><a href="https://frutigeraeroarchive.org" target="_blank"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button.png"></a><a href="https://bibineko.neocities.org"><img src="https://bibineko.neocities.org/bibineko%20web%20button.png"></a><a href="https://prismaticbolt.neocities.org"><img src="https://prismaticbolt.neocities.org/pbbutton.png" /></a><a href="https://luvstarkei.com"><img src="https://i0.wp.com/luvstarkei.com/wp-content/uploads/2024/11/LuvstarKeiButton-1.png?resize=88%2C31&ssl=1"></a><a href="https://imbirowe.neocities.org/" target="_blank"><img src="https://iili.io/2p3Lgg2.png"></a><a href="https://rocilikeswaflezzz.neocities.org/"><img src="https://rocilikeswaflezzz.neocities.org/button.png"></a><a href="https://bisq.neocities.org" target="_blank"><img src="https://bisq.neocities.org/images/sitebuttons/bisq.png"></a>
+
           </div>
         </div>
-        <div class="item">
-          <span class="title">Let's be neighours :)</span>
-          <div class="close">X</div>
-          <div class="content">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Let's be neighbours :)</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
             <center><a href="https://shodantltwb.neocities.org"><img src="/img/shodan8831.png"></a><br>
             <textarea readonly>&#60;a href="https://shodantltwb.neocities.org"&#62;&#60;img src="https://shodantltwb.neocities.org/img/shodan8831.png"&#62;&#60;/a&#62;</textarea></center>
           </div>
         </div>
-        <div class="item">
-          <span class="title">Webrings</span>
-          <div class="close">X</div>
-          <div class="content" id="webrings">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Webrings</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-scrollbar" id="webrings" style="max-height: 8em; overflow: scroll">
             <div id='gamer-ring'>
               <script type="text/javascript" src="https://gamerring.neocities.org/js/variables.js"></script>
               <script type="text/javascript" src="https://gamerring.neocities.org/js/widget-minimal.js"></script>
@@ -102,10 +131,14 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <span class="title">Socials</span>
-          <div class="close">X</div>
-          <div class="content">
+        <div class="window active">
+          <div class="title-bar">
+            <div class="title-bar-text">Socials</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
             <a class="social" href="https://spacehey.com/shodantltwb"><img src="/img/spacehey.png"/><span>SpaceHey</span></a>
             <a class="social" href="https://www.youtube.com/channel/UCjKQR691vKJin-R2QSNr1Bw"><img src="/img/youtube.png"/><span>YouTube</span></a>
             <a class="social" href="https://pretendo.network/"><img src="/img/pretendo.jpg"/><img src="/img/3ds.png"><span> 4093-4742-2393</span></a>
@@ -113,7 +146,7 @@
             <a class="social"><img src="/img/nso.jpg"/><span>NSO: 3823-7197-1312</span></a>
             <a class="social" href="https://steamcommunity.com/id/ShodanTheHacker/"><img src="/img/steam.png"/><span>Steam</span></a>
             <a class="social"><img src="/img/escargot.png"/><span>shodantltwb@escargot.chat</span></a>
-	  </div>
+          </div>
         </div>
       </div>
       <div id="middle" class="flex-container flex-column spacing">

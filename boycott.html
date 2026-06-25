@@ -26,12 +26,13 @@ artist: Rage Against The Machine
 
   details[open] summary{
     background: red;
-    color: black;
+    color: red;
+    text-shadow: white 0px 0px 2px;
   }
 
   summary:hover {
     background: rgba(255,255,255,0.75);
-    color: black;
+    color: red;
   }
 
   .company img:not(li img) {
@@ -48,10 +49,14 @@ artist: Rage Against The Machine
   }
 </style>
 <center><img src="img/construction.gif"></center>
-<div class="item">
-  <span class="title">boycott.sh</span>
-  <div class="close">X</div>
-  <div class="main_content">
+<div class="window active glass">
+  <div class="title-bar">
+    <div class="title-bar-text">boycott.sh</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
     <p>Fuck it. We need to start boycotting companies. Things are gonna get much worse before they get any better, so if you wanna fuck over the rich people who are actively making your life worse, check this list of companies to boycott, not only by not using their services, but by also using whatever tools there are to make their life a living hell.</p>
     <p style="background: red; color: black">Click on a company's name to find out why they're the spawn of Satan and how to get rid of them!</p>
   </div>

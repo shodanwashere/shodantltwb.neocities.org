@@ -5,31 +5,41 @@ song: Welcome to the Green Room
 artist: Toby Fox
 ---
 {% for post in site.posts limit:1 %}
-<div class="item">
-  <div style="display: flex; flex-direction: row; align-items: center">
-    <img src="https://file.garden/Ze88s1ucmRDZDhMX/pixels/043.gif">
-    <span style="text-shadow: 1px 1px 5px magenta;">LATEST BLOG POST</span>
-    <img src="https://file.garden/Ze88s1ucmRDZDhMX/pixels/043.gif">
+<div class="window active glass">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="https://file.garden/Ze88s1ucmRDZDhMX/pixels/043.gif" height="10px">
+      <span style="text-shadow: 1px 1px 5px magenta;">LATEST BLOG POST</span>
+      <img src="https://file.garden/Ze88s1ucmRDZDhMX/pixels/043.gif" height="10px">
+    </div>
+    <div class="title-bar-controls">
+      <button aria-label="Close"></button>
+    </div>
   </div>
-  <div class="close">X</div>
-  <div class="main_content" style="overflow: hidden;">
-    <a href="{{ post.url }}" style="color: white; text-decoration: none;">
+  <div class="window-body has-space" style="overflow: hidden;">
+    <a href="{{ post.url }}" style="color: white; text-shadow: black 2px 2px 1px; text-decoration: none;">
       <img src="/img/posts/thumbnails/{{ post.thumbnail }}" style="margin: 10px; display: block; height: 10vh; width: auto;float: left; object-fit: cover;">
-      <h3 style="margin-bottom: 2px; padding-bottom: 0;">{{ post.title }}</h3>
+      <h2 style="margin-bottom: 2px; padding-bottom: 0;">{{ post.title }}</h2>
       <p style="margin: 0;">{{ post.date | date: "%d %B %Y" }}</p>
       <div style="margin: 5px 0;">
         {% for tag in post.tags %}
-          <span class="tag">{{ tag }}</span>
+          <button>{{ tag }}</button>
         {% endfor %}
       </div>
     </a>
   </div>
 </div>
 {% endfor %}
-<div class="item">
-  <span class="title">About Me</span>
-  <div class="close">X</div>
-  <div class="main_content">
+<div class="window active glass">
+  <div class="title-bar">
+    <div class="title-bar-text">About Me</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space" style="overflow: hidden;">
     <p>Yo. thanks for stopping by! this site is under construction and probably won't ever be completely done.</p>
     <h2>This is my love letter to the internet i fell in love with.</h2>
     <p>I'm a cybersec professional that's been touching computers ever since i was 4. i love reading and i love listening to AND making music. i play the drums since i was 11 and i recently got into playing bass because of Scott Pilgrim (and i suck ass at it, but i love every second)</p>
@@ -40,10 +50,14 @@ artist: Toby Fox
     <img src="https://media.tenor.com/tBI3FQgv0wsAAAAi/susie-deltarune.gif" style="height: 64px; width: auto; position: absolute; right: 64px; top: -24px;" onclick="document.getElementById('susie-laugh').play();">
   </div>
 </div>
-<div class="item">
-  <span class="title">wut.cmd</span>
-  <div class="close">X</div>
-  <div class="main_content">
+<div class="window active glass">
+  <div class="title-bar">
+    <div class="title-bar-text">wut.cmd</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body" style="overflow: hidden;">
     <div class="scroll" style="--t:20s">
       <div>
 	{% for item in site.data.wut %}
@@ -59,17 +73,25 @@ artist: Toby Fox
   </div>
 </div>
 <div style="display: flex; flex-direction: row; gap: 5px; align-items: flex-start;">
-  <div class="item" style="flex-grow: 1; flex-basis: 35%;">
-    <span class="title">lol.exe</span>
-    <div class="close">X</div>
-    <div class="main_content">
+  <div class="window active glass" style=" flex-grow: 1; flex-basis: 35%;">
+    <div class="title-bar">
+      <div class="title-bar-text">wut.cmd</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body" style="overflow: hidden;">
       <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><img src="img/tusob.png" style="width: 100%; height: auto; object-fit: contain;"></a>
     </div>
   </div>
-  <div class="item" style="flex-grow: 3; flex-basis: 67%;">
-    <span class="title">lmao.exe</span>
-    <div class="close">X</div>
-    <div class="main_content">
+  <div class="window active glass" style=" flex-grow: 3; flex-basis: 67%;">
+    <div class="title-bar">
+      <div class="title-bar-text">lmao.exe</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body" style="overflow: hidden;">
       <img src="https://img.wattpad.com/605b17e6963e193bf8e616abcc5031b06290a0c1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6867644a7052575a4e394c4363413d3d2d3835343839313531352e313566666132666134613366633233313739333238383338343335382e6a7067" style="width: 100%; height: auto; object-fit: contain">
     </div>
   </div>

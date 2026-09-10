@@ -430,25 +430,6 @@ code > span {
   display: inline-block;
 }
 
-table#changelog {
-  background: none;
-  color: white;
-}
-
-table#changelog tr td {
-  border: 1px solid white;
-}
-
-table#changelog tr {
-  vertical-align: top;
-}
-
-table#changelog tr td ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 20px;
-}
-
 .modal {
   position: fixed;
   top: 0;

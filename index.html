@@ -4,6 +4,12 @@ ytembedid: tjlvmb8SGEs
 song: LEASE
 artist: Takeshi Abo
 ---
+<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = (window.innerHeight * 0.5) + 'px';
+    console.log(obj.style.height);
+  }
+</script>
 {% for post in site.posts limit:1 %}
 <div class="window active glass">
   <div class="title-bar">
@@ -81,18 +87,24 @@ artist: Takeshi Abo
       </div>
     </div>
     <div class="window-body" style="overflow: hidden;">
-      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><img src="img/tusob.png" style="width: 100%; height: auto; object-fit: contain;"></a>
+      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><img src="img/tusob.png" style="width: 100%; height: d50vh; object-fit: contain;" id="wut"></a>
     </div>
   </div>
   <div class="window active glass" style=" flex-grow: 3; flex-basis: 67%;">
     <div class="title-bar">
-      <div class="title-bar-text">lmao.exe</div>
+      <div class="title-bar-text">miixt-discord.exe</div>
       <div class="title-bar-controls">
         <button aria-label="Close"></button>
       </div>
     </div>
     <div class="window-body" style="overflow: hidden;">
-      <img src="https://img.wattpad.com/605b17e6963e193bf8e616abcc5031b06290a0c1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6867644a7052575a4e394c4363413d3d2d3835343839313531352e313566666132666134613366633233313739333238383338343335382e6a7067" style="width: 100%; height: auto; object-fit: contain">
+      <iframe src="https://discord.com/widget?id=1569773463369945160&theme=dark" width="100%" allowtransparency="true" onload='resizeIframe(this);' frameborder="0" id="miixt" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
   </div>
 </div>
+<script>
+  window.addEventListener("resize", (event) => {
+    let iframe = document.getElementById("miixt");
+    resizeIframe(iframe);
+  })
+</script>

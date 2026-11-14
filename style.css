@@ -164,20 +164,19 @@ body {
   padding: 5px;
 }
 
-.item > .main_content, .item > .blog_content {
+.item > .main_content, .item > .blog-content {
   color: white;
   background: rgba(0,0,0,0.65);
   border: 1px solid grey;
   padding: 1px 5px 1px 5px;
 }
 
-.blog_content > p > img{
+.blog-content > p > img{
   height: auto;
-  max-height: 30em;
-  max-width: 40em;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @keyframes scroll-r2l {

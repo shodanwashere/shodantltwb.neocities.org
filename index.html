@@ -67,7 +67,7 @@ artist: Takeshi Abo
     <div class="scroll" style="--t:20s">
       <div>
 	{% for item in site.data.wut %}
-	  {% if item.link %}<a href="{{ item.link }}">{% endif %}<img src="{{ item.img }}">{% if item.link%}</a>{% endif %}
+	  {% if item.link %}<a href="{{ item.link }}">{% endif %}<img style="height: 31px;" src="{{ item.img }}">{% if item.link%}</a>{% endif %}
 	{% endfor %}
       </div>
       <div>

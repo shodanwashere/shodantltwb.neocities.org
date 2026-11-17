@@ -171,6 +171,33 @@ body {
   padding: 1px 5px 1px 5px;
 }
 
+#blog-highlight {
+  color: black !important;
+}
+
+#blog-highlight p {
+  text-shadow: none;
+}
+
+#blog-highlight > h2 {
+  text-shadow: 1px 1px 0px rgba(0, 145, 137, 0);
+  transition: text-shadow 0.5s, color 0.5s;
+}
+
+#blog-highlight:hover > h2 {
+  color: white;
+  text-shadow: 1px 1px 5px green;
+}
+
+#blog-highlight > img {
+  box-shadow: 0px 0px 2px black;
+  transition: box-shadow 0.5s;
+}
+
+#blog-highlight:hover > img {
+  box-shadow: 0px 0px 10px green;
+}
+
 .blog-content > p > img{
   height: auto;
   display: block;

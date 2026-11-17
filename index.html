@@ -23,7 +23,7 @@ artist: Takeshi Abo
     </div>
   </div>
   <div class="window-body has-space" style="overflow: hidden;">
-    <a href="{{ post.url }}" style="color: white; text-shadow: black 2px 2px 1px; text-decoration: none;">
+    <a href="{{ post.url }}" id="blog-highlight" style="color: white; text-shadow: black 2px 2px 1px; text-decoration: none;">
       <img src="/img/posts/thumbnails/{{ post.thumbnail }}" style="margin: 10px; display: block; height: 10vh; width: auto;float: left; object-fit: cover;">
       <h2 style="margin-bottom: 2px; padding-bottom: 0;">{{ post.title }}</h2>
       <p style="margin: 0;">{{ post.date | date: "%d %B %Y" }}</p>
